@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--This page was made to complete the assignment: 
+    Efficiency at Mission Control
+    By Shan V.-->
+
+<html lang="en">
+    <head>
+
+        <!--the name of the tab-->
+        <title>Space Program</title>
+
+
+        <!-- get java file -->
+        <script src="spaceFunctions.js"></script>
+        <!-- get css -->
+        <link rel="stylesheet" href="spaceDecoration.css">
+
+        
+    </head>
+    <body>
+        <!--the UAT logo-->
+        <img src="UATspaceLogo-2.jpg"/> 
+        <!--The main text-->
+        <h1>UAT Space Program</h1>
+
+        <!-- <script>
+            //To test document.write
+            document.write("This is a test of the document.write function.");
+            /*To test alerts */
+            // alert("This is a test of the alert function.");
+
+         
+
+        </script> -->
+
+        <p><!--testing the paragraph tag-->
+            This is a test of the paragraph tags.
+        </p>
+
+         <!--display the countdown to the user-->
+        <div id="countdownTimer">10</div>
+        <br>
+
+        <!--the buttons-->
+        <button  onclick="countDown()" style="background-color: green;">Start</button>
+        <button style="background-color: red;">Stop </button>
+
+  
+
+        <br>
+        <br>
+
+        <!-- the log in code -->
+        <form id="creditSubmit" onsubmit="return false">
+            Name:     <input type="text" id="Name" /> <br>
+            Badge #:      <input type="text" id="Badge" /> <br>
+            <input type="submit" onclick="Check();" />
+        </form>
+
+        <div id="error"></div>
+        <br>
+
+
+    
+        <!--This is to introduce the craps coding-->
+        <h2>Welcome to the Casino!</h2>
+      
+        <p>Welcome to Craps!<br/> Press the button to begin.</p>
+
+          <!--button to roll the dice-->
+        <button  onclick="craps()" style = "background-color: darkgreen;">Roll the Dice</button>
+        <br/>
+        <br/> 
+        <!-- div for transfer between java and html -->
+        <div id="die1Result">Die 1: #</div>
+        <div id="die2Result">Die 2: #</div>
+        <div id="sumResult">The sum of the numbers is: #</div>
+        <div id="conclusion"></div>
+        <br/>
+
+  
+
+        <!-- trying other games: Higher or Lower -->
+        <p>Welcome to Higher or Lower!<br/> Press the buttons to try your luck.</p>
+
+        <!--Start the game  -->
+        <button onclick="high()" style="background-color: darkgreen;">High</button>
+        <button onclick="even()" style="background-color: darkgreen;">Equal</button>
+        <button onclick="low()" style="background-color: darkgreen;">Low</button>
+
+
+        </br>
+        </br>
+        <!-- the details. -->
+        <div id= "dealer">Dealer Roll: ? </div>
+        <div id= "player">Player Roll: ? </div>
+        <div id= "concHi"></div>
+
+
+        <!-- trying other games: Coin Toss -->
+        <p>Welcome to Coin Toss!<br/> Press the button to try your luck.</p>
+
+        <!-- the button to flip a coin -->
+        <button  onclick="heads()" style = "background-color: darkgreen;">Heads</button>
+        <button  onclick="tails()" style = "background-color: darkgreen;">Tails</button>
+
+        </br>
+        </br>
+        <!-- the details. -->
+        <div id= "coin"></div>
+    
+    </body>
+</html>
